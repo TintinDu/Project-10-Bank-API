@@ -18,7 +18,7 @@ Please make sure you have the right versions and download both packages. You can
 node --version
 
 # Check Mongo version
-mongo --version
+mongod --version
 ```
 
 ### Instructions
@@ -31,6 +31,9 @@ mongo --version
 ```bash
 # Install dependencies
 npm install
+
+# Start mongodb
+brew services start mongodb/brew/mongodb-community
 
 # Start local dev server
 npm run dev:server
